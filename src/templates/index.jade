@@ -1,0 +1,18 @@
+head
+	link(href="css/main.css" rel="stylesheet")
+	meta(charset="utf-8")
+body
+	div.addPlaceholder
+		input#addText(type='text' placeholder='Add task' )
+		input#addButton(type='submit' value='add')
+	div.addPlaceholderTwo
+		input(type='text' placeholder='Delete namber')#addTextTwo
+		input#addButtonTwo(type='submit' value='delete')
+	button#sort-down='sort'
+	button#sort-up='sort rem'
+	table
+		thead#thead
+			tr
+				td.taskName='Task'
+		tbody#tbody
+	script(src='js/main.js')
